@@ -24,7 +24,7 @@ const initialFilterData: IFilterFormProps = {
 const MODEL_NAME = "gemini-1.5-flash";
 const API_KEY = import.meta.env.VITE_GENERATIVE_API_KEY as string;
 
-
+// TODO refactor to another file
 async function runChat(data: string) {
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: MODEL_NAME });
